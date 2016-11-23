@@ -12066,8 +12066,8 @@ div#notebook {
 <p><strong>Answer:</strong></p>
 <ul>
 <li>The total purchase cost of the first sample is far lower than the mean. So it is most likely a retailer.</li>
-<li>The second sample is closer to say a market.</li>
-<li>The third sample is not big enough to be a market, so It's also like a cafe.</li>
+<li>The second sample is closer to say a market, because it's value is closer to the 50th percentile.</li>
+<li>The third sample is not big enough to be a market, so It's also like a cafe. It's values are close to the 25th percentile</li>
 </ul>
 
 </div>
@@ -12152,7 +12152,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong>  I attempted to predict the purchase cost of the feature 'Frozen'. The model does not fit the data because of a negative R^2 value, which shows that it is unnecessary in identifying customers' spending habits.</p>
+<p><strong>Answer:</strong>  I attempted to predict the purchase cost of the feature 'Frozen'. The model does not fit the data because of a negative R^2 value of -0.2294, which shows that it is a very important feature in identifying customers' spending habits.</p>
 
 </div>
 </div>
@@ -14822,7 +14822,7 @@ MzMzMzMzs7b8P6YbhZeIVDkmAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> There's some degree of correlation between Grocery and detergent. The feature 'Frozen' does not really correlate with any other feature, so it's not a very relevant feature. All the features have skewed distribution, they are all skewed towards the left,their mean vary significantly with their medians.</p>
+<p><strong>Answer:</strong> There's some degree of correlation between Grocery and detergent, grocery and milk, detergent and milk. The feature 'Frozen' correlates with 'Fresh' and 'Delicatessen' features, so it's a very relevant feature, confirming my initial suspicion about it's relevance. All the features have skewed distribution, they are all skewed towards the right, their mean vary significantly with their medians.</p>
 
 </div>
 </div>
@@ -21750,7 +21750,7 @@ RU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> The total variance in the data explained by the first and second principal component is 0.719. For the first four, it is 0.9314. from first dimension to second, the positive weighted features decreased while negative weighted feature increased hence, a reduction in variance. The variance continued to decrease, which indicates that customers where spending close to the mean.</p>
+<p><strong>Answer:</strong> The total variance in the data explained by the first and second principal component is 0.719. For the first four, it is 0.9314. from first dimension to second, the positive weighted features decreased while negative weighted feature increased hence, a reduction in variance. The features 'Detergent', 'grocery' and 'milk' are dominant in the first dimension which indicates a super market. The features 'Fresh', 'Frozen' and 'delicatessen' are dominant in the second dimension which indicates a restaurant. In the third dimension, the features 'Fresh'and 'Detergent paper' are dominant. In the fourth dimansion, the feature 'Frozen' is very dominant which indicates something like a cold room or ice cream shop.</p>
 
 </div>
 </div>
@@ -25231,7 +25231,7 @@ BkKSJEmSJEk5YyAkSZIkSZKUMwZCkiRJkiRJOWMgJEmSJEmSlDMGQpIkSZIkSTljICRJkiRJkpQz
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong></p>
-<p>Customers assigned to cluster 0 have features that are higher for features like 'Fresh', 'Frozen', these are like fast food restaurants. Customers assigned to cluster 1 on the other hands have more features like 'Milk', 'Grocery', 'detergent', like supermarkets.</p>
+<p>Customers assigned to cluster 0 have features that are higher for features like 'Fresh', 'Frozen', these are like fast food restaurants.The purchase cost is close to the 50th percentile especially for Fresh and Frozen.Customers assigned to cluster 1 on the other hands have more features like 'Milk', 'Grocery', 'detergent', like supermarkets. The Milk and Grocery Features are very close to the 75th percentile.</p>
 
 </div>
 </div>
@@ -25284,7 +25284,7 @@ Sample point 2 predicted to be in Cluster 0
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer:</strong>
-The predictions for each sample point is very consistent with initial establishment classification by observation.</p>
+The predictions for each sample point are not exactly consistent with initial establishment classification by observation.</p>
 
 </div>
 </div>
@@ -25324,7 +25324,7 @@ The predictions for each sample point is very consistent with initial establishm
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer:</strong> A sample of customers from cluster 0 can be served for 5 days and another 3 days, then A/B test can be run on that sample. The same thing can be done with samples from cluster 1. So there would be two A/B test results, one for each segment. These can easily help understand who would be please and who wouldn't.</p>
+<p><strong>Answer:</strong> A sample of customers from cluster 0 can be served for 5 days and another 3 days, then A/B test can be run on that sample. The same thing can be done with samples from cluster 1. So there would be two independent A/B test results, one for each segment. These can easily help understand who would be please and who wouldn't.</p>
 
 </div>
 </div>
